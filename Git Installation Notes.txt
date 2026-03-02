@@ -1,0 +1,46 @@
+**Git installation**
+```python
+Git was created by Linus Torvalds in April 2005
+
+Install Git (CMD Terminal):
+winget install --id Git.Git -e --source winget
+Git Bash is a Linux-like terminal in Windows.
+
+Check version:
+Git Bash : git --version
+
+
+Create New Repository (Command Line):
+Go to project folder:
+cd Lectures
+cd 2026_02_28
+
+Initialize repository:
+Git Bash : git init - (It will show initializing empty Git repository)
+
+Add files:
+Git Bash : git add . - (It will show show LF will be replaced by CRLF)
+
+Commit files:
+Git Bash : git commit -m "added 28th Feb 2026 notebook"
+
+If identity error occurs: like if error tell me who you are:
+git config user.email "sajesh.nair.ai@gmail.com"
+git config user.name "Sajesh Nair"
+
+Set globally (recommended):
+git config --global user.email "sajesh.nair.ai@gmail.com"
+git config --global user.name "Sajesh Nair"
+
+
+Connect to GitHub and Push:
+Git Bash : git branch -M main
+Git Bash : git remote add origin https://github.com/sajeshnair-ml/Git.git
+Git Bash : git push -u origin main
+sign in password will be received in email. Authenticate it
+
+After making changes in ipynb file
+Git Bash : git status
+Git Bash : git add .
+Git Bash : git commit -m "Updated notebook"
+Git Bash : git push
