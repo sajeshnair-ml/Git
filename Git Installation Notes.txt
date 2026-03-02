@@ -44,3 +44,31 @@ Git Bash : git status
 Git Bash : git add .
 Git Bash : git commit -m "Updated notebook"
 Git Bash : git push
+
+Pull .txt file in VS code
+Git Bash : git branch
+Git Bash : git fetch origin
+Git Bash : git checkout origin/main -- "Git Installation Notes.txt"
+
+Pull all the files from GitHub
+Git Bash : git pull origin main
+
+Clone the repo into a new folder:
+Git Bash : git clone https://github.com/sajeshnair-ml/Git.git 2026-02-28_dup
+
+If push is rejected (non-fast-forward error):
+git pull origin main
+git push origin main
+
+Esc
+:wq
+Enter
+
+
+Before starting work:
+git pull origin main
+
+After making changes:
+git add .
+git commit -m "message"
+git push origin main
